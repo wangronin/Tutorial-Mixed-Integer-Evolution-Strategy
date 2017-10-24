@@ -1,7 +1,6 @@
 ---
 title: "Evolutionary Algorithms for Industrial Problems"
-author: |
-  | Hao Wang, Thomas Bäck | Leiden University
+author: "Hao Wang, Thomas Bäck | Leiden University <br> Email: h.wang@liacs.leidenuniv.nl"
 date: '`r Sys.Date()`'
 output:
   html_notebook:
@@ -349,7 +348,7 @@ The Geometric Distribution is a bit nontrivial to get and thus you could use the
 **GENERATE $G(0, p)$**
 
 1. $u \leftarrow U(0,1)$
-2. $N \leftarrow \frac{\ln(1-u)}{\ln(1-p)}$
+2. $N \leftarrow \left\lfloor\frac{\ln(1-u)}{\ln(1-p)}\right\rfloor$
   
 Basically, please try to find available libraries that performs those generations for you. For instance, in **Python** you can use:
   
